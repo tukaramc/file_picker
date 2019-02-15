@@ -141,9 +141,9 @@ public class FilePickerPlugin implements MethodCallHandler {
 
     if(isCustom) {
       final String extension = type.split("__CUSTOM_")[1].toLowerCase();
-      String mime = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
-      Log.i(TAG, "Custom file type: " + mime);
-      return mime;
+//      String mime = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
+//      Log.i(TAG, "Custom file type: " + mime);
+      return "audio/*";
     }
 
     switch (type) {
